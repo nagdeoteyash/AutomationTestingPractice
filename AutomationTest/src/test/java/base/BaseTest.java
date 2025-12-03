@@ -17,7 +17,7 @@ public class BaseTest
 		driver.manage().window().maximize();
 	}
 	
-	/*
+	
 	@AfterTest
 	public void tearDown()
 	{
@@ -26,5 +26,4 @@ public class BaseTest
 			driver.quit();
 		}
 	}
-	*/
 }

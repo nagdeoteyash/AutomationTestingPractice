@@ -28,7 +28,7 @@ public class ATPW_Test01 extends BaseTest
 		 Wip1.PassWordInput("yashnagdeote2000");
 		 Wip1.DateInput("21052000");
 		 Wip1.ClickDisplayButton();
-		 //Assert.assertEquals(ExpNumber, Wip1.AssertNumber());
+		 
 																																																																																																																																																																																																
 	}
 																																																		

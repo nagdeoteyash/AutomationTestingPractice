@@ -24,7 +24,7 @@ public class WebInputPage
 	private By InputPassword = By.xpath("//input[@id='input-password']");
 	private By InputDate = By.xpath("//input[@id='input-date']");
 	private By Btn_DisplayInput = By.xpath("//button[@id='btn-display-inputs']");
-	
+	private By Btn_clearInput = By.xpath("//button[@id='btn-clear-inputs']");
 	//locators for Assert 
 	private By assert_Number = By.xpath("//strong[@id='output-number']");
 	//private By assert_text = By.xpath("//strong[@id='output-text']");
@@ -56,6 +56,11 @@ public class WebInputPage
 	public void ClickDisplayButton()
 	{
 		WaitUtils.waitForClickable(driver,Btn_DisplayInput ).click();
+	}
+	
+	public void ClickClearBtn()
+	{
+		WaitUtils.waitForPresence(driver, Btn_clearInput).click();
 	}
 	public String AssertNumber()
 	{

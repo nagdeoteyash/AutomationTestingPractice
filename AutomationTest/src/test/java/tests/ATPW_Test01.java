@@ -1,35 +1,34 @@
 package tests;
 
-
-
-
-
-
 //import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
 import page.HomePage;
 import page.WebInputPage;
-
+import Utilities.dataProviderClass;
 
 public class ATPW_Test01 extends BaseTest
 {
 	@Test
-	public void HomePagetest01()
+	public void HomePage()
 	{
 		HomePage Hp1 = new HomePage(driver);
 		Hp1.click_input();
-		//System.out.print(driver.getTitle());
+	}
+	
+	@Test(dependsOnMethods = { "HomePage" } , dataProvider = "loginInfo", dataProviderClass = dataProviderClass.class)
+	public void WebInputTest02(String number , String Text , String Password , String Date)
+	{
 		
 		WebInputPage Wip1= new WebInputPage(driver);
-		 Wip1.NumberInput("1");
-		 Wip1.TextInput("yash Nagdeote");
-		 Wip1.PassWordInput("yashnagdeote2000");
-		 Wip1.DateInput("21052000");
+		 Wip1.NumberInput(number);
+		 Wip1.TextInput(Text);
+		 Wip1.PassWordInput(Password);
+		 Wip1.DateInput(Date);
 		 Wip1.ClickDisplayButton();
-		 
-																																																																																																																																																																																																
+		 Wip1.ClickClearBtn();
+																																																																																																																																																																																															
 	}
 																																																		
 }

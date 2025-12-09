@@ -1,20 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-03T05:03:29 IST" name="Default suite" finished-at="2025-12-03T05:04:07 IST" duration-ms="38131">
+  <suite started-at="2025-12-10T03:48:52 IST" name="Default suite" finished-at="2025-12-10T03:49:15 IST" duration-ms="22537">
     <groups>
     </groups>
-    <test started-at="2025-12-03T05:03:29 IST" name="Default test" finished-at="2025-12-03T05:04:07 IST" duration-ms="38131">
+    <test started-at="2025-12-10T03:48:52 IST" name="Default test" finished-at="2025-12-10T03:49:15 IST" duration-ms="22537">
       <class name="tests.ATPW_Test01">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ATPW_Test01@3bb9a3ff]" started-at="2025-12-03T05:03:29 IST" name="setUp" finished-at="2025-12-03T05:03:41 IST" duration-ms="11458" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ATPW_Test01@694abbdc]" started-at="2025-12-10T03:48:52 IST" name="setUp" finished-at="2025-12-10T03:49:01 IST" duration-ms="8634" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="HomePagetest01()[pri:0, instance:tests.ATPW_Test01@3bb9a3ff]" started-at="2025-12-03T05:03:41 IST" name="HomePagetest01" finished-at="2025-12-03T05:04:07 IST" duration-ms="26562" status="PASS">
+        <test-method signature="HomePage()[pri:0, instance:tests.ATPW_Test01@694abbdc]" started-at="2025-12-10T03:49:01 IST" name="HomePage" finished-at="2025-12-10T03:49:01 IST" duration-ms="521" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- HomePagetest01 -->
+        </test-method> <!-- HomePage -->
+        <test-method signature="WebInputTest02(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.ATPW_Test01@694abbdc]" started-at="2025-12-10T03:49:02 IST" name="WebInputTest02" data-provider="loginInfo" finished-at="2025-12-10T03:49:12 IST" depends-on-methods="tests.ATPW_Test01.HomePage" duration-ms="10480" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Yash]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[yash@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[21052000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebInputTest02 -->
+        <test-method signature="WebInputTest02(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.ATPW_Test01@694abbdc]" started-at="2025-12-10T03:49:12 IST" name="WebInputTest02" data-provider="loginInfo" finished-at="2025-12-10T03:49:13 IST" depends-on-methods="tests.ATPW_Test01.HomePage" duration-ms="1179" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[megha]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[megha@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10022002]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebInputTest02 -->
+        <test-method signature="WebInputTest02(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.ATPW_Test01@694abbdc]" started-at="2025-12-10T03:49:13 IST" name="WebInputTest02" data-provider="loginInfo" finished-at="2025-12-10T03:49:14 IST" depends-on-methods="tests.ATPW_Test01.HomePage" duration-ms="1040" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[prasad]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[prasad@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[11122008]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebInputTest02 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ATPW_Test01@694abbdc]" started-at="2025-12-10T03:49:14 IST" name="tearDown" finished-at="2025-12-10T03:49:15 IST" duration-ms="466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- tests.ATPW_Test01 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

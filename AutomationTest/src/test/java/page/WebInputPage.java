@@ -68,6 +68,9 @@ public class WebInputPage
 		System.out.println("Text inside strong tag: " + AssertNumberActual);
 		return AssertNumberActual;
 	}
-
+	public void QuitWin()
+	{
+		driver.quit();
+	}
 	
 }

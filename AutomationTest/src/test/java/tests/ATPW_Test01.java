@@ -10,14 +10,14 @@ import Utilities.dataProviderClass;
 
 public class ATPW_Test01 extends BaseTest
 {
-	@Test
-	public void HomePage()
+	@Test(priority = 1 )
+	public void Homepage()
 	{
 		HomePage Hp1 = new HomePage(driver);
 		Hp1.click_input();
 	}
-	
-	@Test(dependsOnMethods = { "HomePage" } , dataProvider = "loginInfo", dataProviderClass = dataProviderClass.class)
+	@Test(priority = 2 , 
+			dataProvider = "loginInfo", dataProviderClass = dataProviderClass.class)
 	public void WebInputTest02(String number , String Text , String Password , String Date)
 	{
 		
@@ -28,7 +28,5 @@ public class ATPW_Test01 extends BaseTest
 		 Wip1.DateInput(Date);
 		 Wip1.ClickDisplayButton();
 		 Wip1.ClickClearBtn();
-																																																																																																																																																																																															
 	}
-																																																		
 }

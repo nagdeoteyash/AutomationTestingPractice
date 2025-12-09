@@ -9,7 +9,7 @@ public class HomePage
 	//private will be only accessible with the class in which they are declared
 	
 	private By link = By.xpath("//h3/a[@href='/inputs']");
-	
+	private By TestLoginPage = By.xpath("//div/a[@href='/login']");
 	public HomePage(WebDriver driver)
 	{
 		this.driver = driver;
@@ -20,6 +20,9 @@ public class HomePage
 		driver.findElement(link).click();
 	}
 	
-	
+	public void Click_TestLoginPage ()
+	{
+		driver.findElement(TestLoginPage).click();
+	}
 
 }

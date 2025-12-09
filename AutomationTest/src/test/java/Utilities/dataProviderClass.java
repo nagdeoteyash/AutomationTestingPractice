@@ -15,5 +15,14 @@ public class dataProviderClass
 					{"3" , "prasad" ,  "prasad@123" , "11122008"}
 				};
 	}
-
+	
+	@DataProvider(name = "Passcode")
+	public Object[][] dataset1()
+	{
+		return new Object[][]
+				{
+					{"practice","SuperSecretPassword!"}
+							
+				};
+	}
 }

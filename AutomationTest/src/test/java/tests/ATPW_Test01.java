@@ -1,5 +1,6 @@
 package tests;
 
+import org.testng.annotations.Listeners;
 //import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -7,6 +8,12 @@ import base.BaseTest;
 import page.HomePage;
 import page.WebInputPage;
 import Utilities.dataProviderClass;
+@Listeners(Utilities.ListenersUtils.class)
+//if we want to use listeners directly without any XML file Use.
+
+
+
+
 
 public class ATPW_Test01 extends BaseTest
 {

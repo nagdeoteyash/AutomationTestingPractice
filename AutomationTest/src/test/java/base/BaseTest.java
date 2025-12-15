@@ -1,7 +1,10 @@
 package base;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.ITestContext;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -25,5 +28,10 @@ public class BaseTest
 		{
 			driver.quit();
 		}
+	}
+	
+	@AfterMethod
+	public void setDriverToReport(ITestContext context) {
+	    context.setAttribute("driver", driver);
 	}
 }

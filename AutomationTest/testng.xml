@@ -3,9 +3,8 @@
 <suite name="Suite">
 
 <listeners>
-	<listener class-name="Utilities.ListenersUtils"/>
+<listener class-name="Utilities.ExtentReportUtil"/>
 </listeners>
-
   <test name="Test">
     <classes>
       <class name="tests.ATPW_Test01"/>
